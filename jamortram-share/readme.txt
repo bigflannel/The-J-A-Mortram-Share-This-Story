@@ -35,6 +35,13 @@ There are no settings, just activate the plugin to display the share buttons.
 
 == Changelog ==
 
+= 1.02 =
+
+July 30,2013
+
+* Changed Plugin Name in jamortram-share.php to 'The J A Mortram Share This Story', removed word plugin.
+* Amended GitHub URL and Plugin Home Page listed in readme to reflect this.
+
 = 1.01 =
 
 July 28, 2013
@@ -50,6 +57,10 @@ July 28, 2013
 
 == Upgrade Notice ==
 
+= 1.02 =
+
+Further change in plugin title.
+
 = 1.01 =
 
 Change in plugin title.
@@ -62,4 +73,4 @@ This functionality was removed from The J A Mortram WordPress Theme so it could 
 
 * [Mike Hartley](mailto:mike@bigflannel.com)
 * [bigflannel](http://bigflannel.com)
-* [Plugin Home Page](https://github.com/bigflannel/The-J-A-Mortram-Share-Plugin)
+* [Plugin Home Page](https://github.com/bigflannel/The-J-A-Mortram-Share-This-Story)
