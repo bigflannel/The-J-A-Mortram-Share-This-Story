@@ -35,6 +35,12 @@ There are no settings, just activate the plugin to display the share buttons.
 
 == Changelog ==
 
+= 1.03 =
+
+August 3,2013
+
+* Amended src to plugin css and share graphics so not hardcoded.
+
 = 1.02 =
 
 July 30,2013

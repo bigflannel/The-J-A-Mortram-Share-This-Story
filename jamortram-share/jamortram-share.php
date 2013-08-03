@@ -3,7 +3,7 @@
 Plugin Name: The J A Mortram Share This Story
 Plugin URI: https://github.com/bigflannel/The-J-A-Mortram-Share-This-Story
 Description: Once activated, plugin adds 'Share This Story' buttons to the end of a single post before the comments. Posts can be shared on Twitter, Facebook and Google+. This plugin does not embed tags from any of the above services in your WordPress site. Instead it simply posts the page URL and any other information relevant to each network's API.
-Version: 1.02
+Version: 1.03
 Author: Mike Hartley
 Author URI: http://bigflannel.com
 License: GPL2
@@ -31,7 +31,7 @@ if (!class_exists("JAMortramShareThisStory")) {
 			add_filter( "comments_template", array( $this, "add_share" ) );
 		}
 		function add_css() {
-			wp_register_style( 'jamortram-share-style', plugins_url( 'jamortram-share/jamortram-share.css', 'jamortram-share' ) );
+			wp_register_style( 'jamortram-share-style', plugins_url( 'jamortram-share.css' , __FILE__ ) );
 			wp_enqueue_style( 'jamortram-share-style' );
 		}
 		function add_share() {
@@ -39,11 +39,11 @@ if (!class_exists("JAMortramShareThisStory")) {
 				<h3><?php _e( 'Share This Story', 'The J A Mortram Share This Story' ); ?></h3>
 				<nav class="jam-center">	
 					<ul>
-						<li><a href="http://twitter.com/share?text=<?php echo urlencode(the_title_attribute('echo=0')); ?>&amp;url=<?php echo get_permalink(); ?>" target="_blank"><img class="jam-social-share" src="<?php echo plugins_url( 'jamortram-share/img/twitter.png', 'jamortram-share' ); ?>" alt="share on twitter" /></a>
+						<li><a href="http://twitter.com/share?text=<?php echo urlencode(the_title_attribute('echo=0')); ?>&amp;url=<?php echo get_permalink(); ?>" target="_blank"><img class="jam-social-share" src="<?php echo plugins_url( 'img/twitter.png' , __FILE__ ); ?>" alt="share on twitter" /></a>
 						</li>
-						<li><a href="http://www.facebook.com/sharer.php?title=<?php echo urlencode(the_title_attribute('echo=0')); ?>&amp;u=<?php echo get_permalink(); ?>"><img class="jam-social-share" src="<?php echo plugins_url( 'jamortram-share/img/facebook.png', 'jamortram-share' ); ?>" alt="share on Facebook" /></a>
+						<li><a href="http://www.facebook.com/sharer.php?title=<?php echo urlencode(the_title_attribute('echo=0')); ?>&amp;u=<?php echo get_permalink(); ?>"><img class="jam-social-share" src="<?php echo plugins_url( 'img/facebook.png' , __FILE__ ); ?>" alt="share on Facebook" /></a>
 						</li>
-						<li><a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>"><img class="jam-social-share" src="<?php echo plugins_url( 'jamortram-share/img/gplus.png', 'jamortram-share' ); ?>" alt="share on Google+" /></a>
+						<li><a href="https://plus.google.com/share?url=<?php echo get_permalink(); ?>"><img class="jam-social-share" src="<?php echo plugins_url( 'img/gplus.png' , __FILE__ ); ?>" alt="share on Google+" /></a>
 						</li>
 					</ul>
 				</nav>
