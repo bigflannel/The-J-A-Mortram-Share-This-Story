@@ -3,7 +3,7 @@
 Contributors: bigflannel
 Tags: The J A Mortram, social media, sharing
 Requires at least: 3.0
-Tested up to: 4.4.2
+Tested up to: 4.9
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,6 +41,18 @@ There are no settings, just activate the plugin to display the share buttons.
 1. 'Share This Story' buttons added to the end of a single post before the comments.
 
 == Changelog ==
+
+= 1.12 =
+
+November 2017
+
+* Updated 'Tested up to'.
+
+= 1.11 =
+
+June 26, 2017
+
+* Updated 'Tested up to'.
 
 = 1.10 =
 
@@ -114,25 +126,9 @@ July 28, 2013
 
 == Upgrade Notice ==
 
-= 1.05 =
+= 1.11 =
 
-* Essential update. Prevents activation error and other problems.
-
-= 1.04 =
-
-readme update.
-
-= 1.02 =
-
-* Further change in plugin title.
-
-= 1.01 =
-
-* Change in plugin title.
-
-= 1.0 =
-
-This functionality was removed from The J A Mortram WordPress Theme so it could be accepted into the WordPress Themes Directory. Replace it with this plugin.
+* Non essential update.
 
 == Author ==
 
